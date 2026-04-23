@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Relative Rotation Graph – Sector View</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Relative Rotation Graph <span>®</span></h1>
+
+    <section class="controls">
+      <label>
+        Benchmark
+        <select id="benchmark">
+          <option>Nifty 50</option>
+          <option>Nifty 500</option>
+          <option>Sensex</option>
+        </select>
+      </label>
+
+      <label>
+        Candle timeframe
+        <select id="timeframe">
+          <option>Weekly candle</option>
+          <option>Daily candle</option>
+          <option>Monthly candle</option>
+        </select>
+      </label>
+
+      <label class="tail">
+        Tail length: <strong><span id="tailValue">6</span> weeks</strong>
+        <input id="tailLength" type="range" min="3" max="12" value="6" />
+      </label>
+
+      <button id="animate">Animate</button>
+    </section>
+
+    <p class="subtitle" id="subtitle"></p>
+
+    <section id="rrg" aria-label="Relative rotation graph"></section>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>JdK RS-Ratio</th>
+          <th>JdK RS-Momentum</th>
+          <th>Price</th>
+          <th>% Change</th>
+        </tr>
+      </thead>
+      <tbody id="sectorRows"></tbody>
+    </table>
+  </main>
+</body>
+</html>
