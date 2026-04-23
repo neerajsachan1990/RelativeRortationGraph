@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relative Rotation Graph</title>
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Relative Rotation Graph ®</h1>
+
+      <section class="controls">
+        <label>
+          Benchmark
+          <select id="benchmarkSelect"></select>
+        </label>
+
+        <label>
+          Candle timeframe
+          <select id="timeframeSelect">
+            <option value="weekly" selected>Weekly candle</option>
+            <option value="daily">Daily candle</option>
+          </select>
+        </label>
+
+        <label>
+          Tail length: <span id="tailValue">6</span>
+          <input id="tailLength" type="range" min="3" max="12" value="6" />
+        </label>
+
+        <label class="toggle">
+          Include partial candles
+          <input id="partialCandles" type="checkbox" />
+        </label>
+
+        <label>
+          Load real data (JSON)
+          <input id="dataFile" type="file" accept="application/json" />
+        </label>
+
+        <div class="actions">
+          <button id="animateBtn">Animate ✨</button>
+          <button id="zoneBtn">Hide zones</button>
+        </div>
+      </section>
+
+      <p id="summary"></p>
+      <div id="rrgChart" aria-label="Relative rotation graph"></div>
+
+      <table id="sectorTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>JdK RS-Ratio</th>
+            <th>JdK RS-Momentum</th>
+            <th>Price</th>
+            <th>% Change</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </main>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

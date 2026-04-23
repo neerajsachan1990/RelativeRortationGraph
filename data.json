@@ -1,0 +1,569 @@
+{
+  "asOfDate": "2026-04-17",
+  "benchmark": "NIFTY 50",
+  "benchmarks": [
+    "NIFTY 50",
+    "NIFTY 500"
+  ],
+  "series": [
+    {
+      "name": "NIFTY AUTO",
+      "color": "#f94144",
+      "price": 48230.2,
+      "pctChange": -2.33,
+      "points": [
+        {
+          "date": "2026-03-06",
+          "ratio": 95.49,
+          "momentum": 97.28
+        },
+        {
+          "date": "2026-03-13",
+          "ratio": 96.13,
+          "momentum": 97.5
+        },
+        {
+          "date": "2026-03-20",
+          "ratio": 96.55,
+          "momentum": 97.78
+        },
+        {
+          "date": "2026-03-27",
+          "ratio": 96.95,
+          "momentum": 98.03
+        },
+        {
+          "date": "2026-04-03",
+          "ratio": 97.37,
+          "momentum": 98.12
+        },
+        {
+          "date": "2026-04-10",
+          "ratio": 97.96,
+          "momentum": 98.56
+        },
+        {
+          "date": "2026-04-17",
+          "ratio": 98.41,
+          "momentum": 98.71
+        }
+      ]
+    },
+    {
+      "name": "NIFTY PSU BANK",
+      "color": "#f3722c",
+      "price": 7345.2,
+      "pctChange": -2.2,
+      "points": [
+        {
+          "date": "2026-03-06",
+          "ratio": 96.14,
+          "momentum": 97.97
+        },
+        {
+          "date": "2026-03-13",
+          "ratio": 96.98,
+          "momentum": 98.18
+        },
+        {
+          "date": "2026-03-20",
+          "ratio": 97.75,
+          "momentum": 98.51
+        },
+        {
+          "date": "2026-03-27",
+          "ratio": 98.19,
+          "momentum": 98.75
+        },
+        {
+          "date": "2026-04-03",
+          "ratio": 98.71,
+          "momentum": 99.32
+        },
+        {
+          "date": "2026-04-10",
+          "ratio": 99.17,
+          "momentum": 99.78
+        },
+        {
+          "date": "2026-04-17",
+          "ratio": 99.84,
+          "momentum": 100.14
+        }
+      ]
+    },
+    {
+      "name": "NIFTY CONSUMER DURBL",
+      "color": "#f8961e",
+      "price": 67120.0,
+      "pctChange": -2.02,
+      "points": [
+        {
+          "date": "2026-03-06",
+          "ratio": 96.49,
+          "momentum": 98.11
+        },
+        {
+          "date": "2026-03-13",
+          "ratio": 97.08,
+          "momentum": 98.22
+        },
+        {
+          "date": "2026-03-20",
+          "ratio": 97.49,
+          "momentum": 98.41
+        },
+        {
+          "date": "2026-03-27",
+          "ratio": 97.97,
+          "momentum": 98.46
+        },
+        {
+          "date": "2026-04-03",
+          "ratio": 98.61,
+          "momentum": 98.71
+        },
+        {
+          "date": "2026-04-10",
+          "ratio": 99.0,
+          "momentum": 98.89
+        },
+        {
+          "date": "2026-04-17",
+          "ratio": 99.51,
+          "momentum": 99.21
+        }
+      ]
+    },
+    {
+      "name": "NIFTY REALTY",
+      "color": "#f9844a",
+      "price": 987.1,
+      "pctChange": -1.83,
+      "points": [
+        {
+          "date": "2026-03-06",
+          "ratio": 97.76,
+          "momentum": 98.65
+        },
+        {
+          "date": "2026-03-13",
+          "ratio": 98.15,
+          "momentum": 98.89
+        },
+        {
+          "date": "2026-03-20",
+          "ratio": 98.42,
+          "momentum": 99.02
+        },
+        {
+          "date": "2026-03-27",
+          "ratio": 98.64,
+          "momentum": 99.22
+        },
+        {
+          "date": "2026-04-03",
+          "ratio": 99.19,
+          "momentum": 99.38
+        },
+        {
+          "date": "2026-04-10",
+          "ratio": 99.8,
+          "momentum": 99.42
+        },
+        {
+          "date": "2026-04-17",
+          "ratio": 100.33,
+          "momentum": 99.59
+        }
+      ]
+    },
+    {
+      "name": "NIFTY BANK",
+      "color": "#1f77ff",
+      "price": 56565.7,
+      "pctChange": -2.11,
+      "points": [
+        {
+          "date": "2026-03-06",
+          "ratio": 101.68,
+          "momentum": 99.43
+        },
+        {
+          "date": "2026-03-13",
+          "ratio": 101.49,
+          "momentum": 99.62
+        },
+        {
+          "date": "2026-03-20",
+          "ratio": 101.11,
+          "momentum": 99.83
+        },
+        {
+          "date": "2026-03-27",
+          "ratio": 101.0,
+          "momentum": 100.18
+        },
+        {
+          "date": "2026-04-03",
+          "ratio": 100.97,
+          "momentum": 100.2
+        },
+        {
+          "date": "2026-04-10",
+          "ratio": 100.74,
+          "momentum": 100.39
+        },
+        {
+          "date": "2026-04-17",
+          "ratio": 100.34,
+          "momentum": 100.49
+        }
+      ]
+    },
+    {
+      "name": "NIFTY FIN SERVICE",
+      "color": "#277da1",
+      "price": 25964.4,
+      "pctChange": -1.45,
+      "points": [
+        {
+          "date": "2026-03-06",
+          "ratio": 99.12,
+          "momentum": 99.17
+        },
+        {
+          "date": "2026-03-13",
+          "ratio": 98.96,
+          "momentum": 99.1
+        },
+        {
+          "date": "2026-03-20",
+          "ratio": 98.94,
+          "momentum": 99.33
+        },
+        {
+          "date": "2026-03-27",
+          "ratio": 98.76,
+          "momentum": 99.35
+        },
+        {
+          "date": "2026-04-03",
+          "ratio": 98.81,
+          "momentum": 99.58
+        },
+        {
+          "date": "2026-04-10",
+          "ratio": 98.98,
+          "momentum": 99.8
+        },
+        {
+          "date": "2026-04-17",
+          "ratio": 98.9,
+          "momentum": 99.81
+        }
+      ]
+    },
+    {
+      "name": "NIFTY IT",
+      "color": "#ff4fa5",
+      "price": 31809.85,
+      "pctChange": 5.55,
+      "points": [
+        {
+          "date": "2026-03-06",
+          "ratio": 93.37,
+          "momentum": 96.36
+        },
+        {
+          "date": "2026-03-13",
+          "ratio": 94.18,
+          "momentum": 96.85
+        },
+        {
+          "date": "2026-03-20",
+          "ratio": 95.01,
+          "momentum": 97.46
+        },
+        {
+          "date": "2026-03-27",
+          "ratio": 96.0,
+          "momentum": 97.97
+        },
+        {
+          "date": "2026-04-03",
+          "ratio": 96.73,
+          "momentum": 98.55
+        },
+        {
+          "date": "2026-04-10",
+          "ratio": 97.62,
+          "momentum": 99.2
+        },
+        {
+          "date": "2026-04-17",
+          "ratio": 98.79,
+          "momentum": 99.91
+        }
+      ]
+    },
+    {
+      "name": "NIFTY FMCG",
+      "color": "#0c53a7",
+      "price": 49657.75,
+      "pctChange": -0.63,
+      "points": [
+        {
+          "date": "2026-03-06",
+          "ratio": 96.08,
+          "momentum": 99.4
+        },
+        {
+          "date": "2026-03-13",
+          "ratio": 96.86,
+          "momentum": 99.63
+        },
+        {
+          "date": "2026-03-20",
+          "ratio": 97.63,
+          "momentum": 99.88
+        },
+        {
+          "date": "2026-03-27",
+          "ratio": 98.17,
+          "momentum": 99.94
+        },
+        {
+          "date": "2026-04-03",
+          "ratio": 98.58,
+          "momentum": 100.11
+        },
+        {
+          "date": "2026-04-10",
+          "ratio": 98.97,
+          "momentum": 100.01
+        },
+        {
+          "date": "2026-04-17",
+          "ratio": 99.42,
+          "momentum": 99.96
+        }
+      ]
+    },
+    {
+      "name": "NIFTY METAL",
+      "color": "#b5179e",
+      "price": 8560.1,
+      "pctChange": -0.85,
+      "points": [
+        {
+          "date": "2026-03-06",
+          "ratio": 97.99,
+          "momentum": 99.22
+        },
+        {
+          "date": "2026-03-13",
+          "ratio": 98.03,
+          "momentum": 99.14
+        },
+        {
+          "date": "2026-03-20",
+          "ratio": 98.03,
+          "momentum": 99.3
+        },
+        {
+          "date": "2026-03-27",
+          "ratio": 98.31,
+          "momentum": 99.11
+        },
+        {
+          "date": "2026-04-03",
+          "ratio": 98.43,
+          "momentum": 99.02
+        },
+        {
+          "date": "2026-04-10",
+          "ratio": 98.59,
+          "momentum": 98.83
+        },
+        {
+          "date": "2026-04-17",
+          "ratio": 98.98,
+          "momentum": 99.04
+        }
+      ]
+    },
+    {
+      "name": "NIFTY OIL AND GAS",
+      "color": "#577590",
+      "price": 10520.8,
+      "pctChange": -0.77,
+      "points": [
+        {
+          "date": "2026-03-06",
+          "ratio": 98.67,
+          "momentum": 99.47
+        },
+        {
+          "date": "2026-03-13",
+          "ratio": 98.77,
+          "momentum": 99.42
+        },
+        {
+          "date": "2026-03-20",
+          "ratio": 99.09,
+          "momentum": 99.33
+        },
+        {
+          "date": "2026-03-27",
+          "ratio": 99.04,
+          "momentum": 99.6
+        },
+        {
+          "date": "2026-04-03",
+          "ratio": 99.22,
+          "momentum": 99.49
+        },
+        {
+          "date": "2026-04-10",
+          "ratio": 99.41,
+          "momentum": 99.33
+        },
+        {
+          "date": "2026-04-17",
+          "ratio": 99.59,
+          "momentum": 99.62
+        }
+      ]
+    },
+    {
+      "name": "NIFTY MEDIA",
+      "color": "#43aa8b",
+      "price": 1985.5,
+      "pctChange": 0.82,
+      "points": [
+        {
+          "date": "2026-03-06",
+          "ratio": 100.16,
+          "momentum": 100.17
+        },
+        {
+          "date": "2026-03-13",
+          "ratio": 100.09,
+          "momentum": 100.34
+        },
+        {
+          "date": "2026-03-20",
+          "ratio": 100.18,
+          "momentum": 100.51
+        },
+        {
+          "date": "2026-03-27",
+          "ratio": 100.18,
+          "momentum": 100.41
+        },
+        {
+          "date": "2026-04-03",
+          "ratio": 100.4,
+          "momentum": 100.68
+        },
+        {
+          "date": "2026-04-10",
+          "ratio": 100.64,
+          "momentum": 100.86
+        },
+        {
+          "date": "2026-04-17",
+          "ratio": 100.87,
+          "momentum": 101.01
+        }
+      ]
+    },
+    {
+      "name": "NIFTY HEALTHCARE",
+      "color": "#52b788",
+      "price": 13345.9,
+      "pctChange": 2.11,
+      "points": [
+        {
+          "date": "2026-03-06",
+          "ratio": 101.72,
+          "momentum": 100.5
+        },
+        {
+          "date": "2026-03-13",
+          "ratio": 101.18,
+          "momentum": 100.31
+        },
+        {
+          "date": "2026-03-20",
+          "ratio": 100.76,
+          "momentum": 100.32
+        },
+        {
+          "date": "2026-03-27",
+          "ratio": 100.66,
+          "momentum": 100.22
+        },
+        {
+          "date": "2026-04-03",
+          "ratio": 100.55,
+          "momentum": 100.37
+        },
+        {
+          "date": "2026-04-10",
+          "ratio": 100.45,
+          "momentum": 100.22
+        },
+        {
+          "date": "2026-04-17",
+          "ratio": 100.01,
+          "momentum": 100.01
+        }
+      ]
+    },
+    {
+      "name": "NIFTY PHARMA",
+      "color": "#67b34e",
+      "price": 22497.25,
+      "pctChange": -2.06,
+      "points": [
+        {
+          "date": "2026-03-06",
+          "ratio": 100.09,
+          "momentum": 100.48
+        },
+        {
+          "date": "2026-03-13",
+          "ratio": 100.18,
+          "momentum": 100.37
+        },
+        {
+          "date": "2026-03-20",
+          "ratio": 100.18,
+          "momentum": 100.4
+        },
+        {
+          "date": "2026-03-27",
+          "ratio": 99.91,
+          "momentum": 100.37
+        },
+        {
+          "date": "2026-04-03",
+          "ratio": 100.04,
+          "momentum": 100.4
+        },
+        {
+          "date": "2026-04-10",
+          "ratio": 100.08,
+          "momentum": 100.28
+        },
+        {
+          "date": "2026-04-17",
+          "ratio": 99.86,
+          "momentum": 100.31
+        }
+      ]
+    }
+  ]
+}
