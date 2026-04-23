@@ -8,6 +8,7 @@ const timeframeSelect = document.getElementById('timeframeSelect');
 const partialCandlesEl = document.getElementById('partialCandles');
 const benchmarkSelect = document.getElementById('benchmarkSelect');
 const dataFileEl = document.getElementById('dataFile');
+const showLabelsEl = document.getElementById('showLabels');
 const tbody = document.querySelector('#sectorTable tbody');
 
 const midpoint = 100;
@@ -16,6 +17,7 @@ let appState = {
   rawData: null,
   series: [],
   showZones: true,
+  showLabels: false,
   animating: false,
   enabledSectors: new Set(),
   frameIdx: 0,
@@ -109,6 +111,8 @@ function zoneShapes(xRange, yRange, showZones) {
 }
 
 function buildTraces(frameIdx, tailLength) {
+  const labelAllowed = appState.showLabels && currentSeries().length <= 8;
+
   return currentSeries().flatMap((item) => {
     const safeFrame = Math.min(frameIdx, item.points.length - 1);
     const start = Math.max(0, safeFrame - tailLength + 1);
@@ -131,9 +135,9 @@ function buildTraces(frameIdx, tailLength) {
       x: [current.ratio],
       y: [current.momentum],
       type: 'scatter',
-      mode: 'markers+text',
+      mode: labelAllowed ? 'markers+text' : 'markers',
       marker: { size: 9, color: item.color, line: { color: '#ffffff', width: 1 } },
-      text: [item.name],
+      text: labelAllowed ? [item.name] : undefined,
       textposition: 'top center',
       textfont: { color: item.color, size: 11 },
       showlegend: false,
@@ -218,10 +222,16 @@ function render(frameIdx = appState.series[0].points.length - 1) {
 
   Plotly.react(chartEl, traces, layout, { responsive: true, displaylogo: false });
 
+
   const safeIndex = Math.min(frameIdx, appState.series[0].points.length - 1);
   const date = appState.series[0].points[safeIndex].date;
   const timeframeLabel = timeframeSelect.value === 'daily' ? 'days' : 'weeks';
-  summaryEl.textContent = `Showing data for ${tailLength + 1} ${timeframeLabel} ending ${formatDate(date)}`;
+  const baseSummary = `Showing data for ${tailLength + 1} ${timeframeLabel} ending ${formatDate(date)}`;
+  if (currentSeries().length > 8 && appState.showLabels) {
+    summaryEl.textContent = `${baseSummary} · labels auto-muted for readability`;
+  } else {
+    summaryEl.textContent = baseSummary;
+  }
 
   updateTable(safeIndex);
 }
@@ -264,6 +274,10 @@ function bindEvents() {
   timeframeSelect.addEventListener('change', () => { updateDerivedSeries(); render(); });
   partialCandlesEl.addEventListener('change', () => { updateDerivedSeries(); render(); });
   benchmarkSelect.addEventListener('change', () => render(appState.frameIdx));
+  showLabelsEl.addEventListener('change', () => {
+    appState.showLabels = showLabelsEl.checked;
+    render(appState.frameIdx);
+  });
 
   dataFileEl.addEventListener('change', async (event) => {
     const file = event.target.files?.[0];

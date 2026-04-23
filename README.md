@@ -17,6 +17,7 @@ This app now supports larger sector sets and lets you load your own real JSON da
 - Zone visibility toggle
 - Animation
 - Checkbox-based sector visibility controls
+- Show labels toggle (recommended OFF when many sectors are visible)
 - Upload your own JSON data file from the UI
 
 ## Run locally
